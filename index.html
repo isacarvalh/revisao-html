@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="#listas">Listas</a>
+        <a href="#tabelas">Tabelas</a>
+        <a href="#form">Formulários</a>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section id="listas">
+            <h1>LISTAS</h1>
+            <h2>Listas de Flores!</h2>
+
+            <ol>
+                <li>Girassol</li>
+                <li>Orquídea</li>
+                <li>Rosa</li>
+                <li>Margarida</li>
+                <li>Lírio</li>
+            </ol>
+            
+            <h2>Lista de Ervas Daminhas!</h2>
+            <ul>
+                <li>Cebolinha verde</li>
+                <li>Nirá</li>
+                <li>Manjericão</li>
+                <li>Erva Cidrea</li>
+                <li>Babosa</li>
+            </ul>
+        </section>
+        <section id="tabelas">
+            <h1>TABELAS</h1>
+            <table id="one">
+                <thead>
+                    <tr id="title">
+                        <th>SIGNIFICADO DAS ROSAS!</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Vermelha </th>
+                    <td>Amor, respeiro, coragem e paixão</td>
+                </tr>
+                <tr>
+                    <th>Amarela </th>
+                    <td>Felicidade, orgulho e amizade</td>          
+                </tr>
+                <tr>
+                    <th>Rosa </th>
+                    <td>Simpatia, amizade e carinho</td>
+                </tr>
+                <tr>
+                    <th>Chá </th>
+                    <td>Gratidão, respeito, apreciação e admiração</td>
+                </tr>
+                <tr>
+                    <th>Branca </th>
+                    <td>Inocência, paz e reverência</td>
+                </tr>
+                <tr>
+                    <th>Laranja </th>
+                    <td>Fascinação e encantamento</td>
+                </tr>
+                <tr>
+                    <th>Vermelha e Branca juntas </th>
+                    <td>União</td>
+                </tr>
+                </tbody>
+            </table>
+            <table id="two">
+                <thead>
+                <tr>
+                    <th>FLORES COMESTÍVEIS</th>
+                    <th>FLORES TOXÍCAS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Amor-perfeito</td>
+                    <td>Alamanda</td>
+                </tr>
+                <tr>
+                    <td>Begônia</td>
+                    <td>Alisso (flor-de-mel)</td>
+                </tr>
+                <tr>
+                    <td>Borago</td>
+                    <td>Amarílis</td>
+                </tr>
+                <tr>
+                    <td>Brinco-de-princesa</td>
+                    <td>Azaléia</td>
+                </tr>
+                </tbody>
+             </table> 
+
+        </section>
+        <section id="form">
+            <h1>FORMULÁRIOS</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Se inscreva em nossa ONG!</legend>
+                    <div>
+                      <label for="Nome">Nome:</label>
+                      <input placeholder="Digite seu Nome" type="text">
+                    </div>
+                  
+                    <div>
+                      <label for="email">Email:</label>
+                      <input placeholder="Digite seu email" type="email">
+                    </div>
+        
+                    <div>
+                      <label for="senha">Senha:</label>
+                      <input placeholder=" Digite a sua senha" type="password">
+                    </div>
+        
+                    <div>
+                      <label for="data">Data de nascimento:</label>
+                      <input id="data" type="date">
+                    </div>
+                </fieldset>
+        
+               <fieldset>
+                <legend>Já participou de uma ONG antes?</legend>
+                 <div>
+                   <input name="sim" id="ja-fez" type="radio" value="ja-fez">
+                   <label for="ja-fez">Sim, já participei.</label>
+                 </div>
+                 <div>
+                   <input name="nao" id="nao-fez" type="radio" value="nao-fez">
+                   <label for="nao-fez">Não, nunca participei.</label>
+                 </div> 
+               </fieldset>
+               <fieldset>
+                <legend>Preferência de Plantas!</legend>
+                 
+                 <div>
+                   <label for="pref-planta">Tipos</label>
+                   <select name="pref-planta" id="pref-planta">
+                    <option value="" disabled selected>Selecione...</option>
+                  <option value="flores">Flores</option>
+                   <option value="ervasdaminhas">Ervas Daminhas</option>
+                   <option value="folhas">Folhagens</option>
+                   <option value="suculentas">Suculentas</option>
+                   </select>
+            
+                 </div>
+                 <div>
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Eu concordo com os Termos.</label>
+                  </div>
+                  
+                  <button>Registrar</button>
+                  
+                 
+               </fieldset>
+               
+        
+             </form>
+        </section>
+    </main>
+    
+</body>
+</html>
